@@ -48,7 +48,7 @@ kubectl rollout status deployment/demo
 To see all the resources which were created, run:
 
 ```execute
-kubectl get all
+kubectl get pods,deployments,replicasets
 ```
 
 The output should be similar to:
