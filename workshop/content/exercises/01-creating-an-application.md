@@ -13,7 +13,7 @@ Although we can't use the web interface for start.spring.io to create the applic
 For our second method we will use `curl` to make a request against the REST API service, download the application, and then unpack it. Run the command:
 
 ```execute
-rm -rf demo && mkdir -p demo && (cd demo; curl -s https://start.spring.io/starter.tgz -d dependencies=webflux,actuator | tar -xzvf -)
+rm -rf demo && mkdir -p demo && (cd demo; curl -s https://start.spring.io/starter.tgz -d dependencies=webflux,actuator -d type=maven-project | tar -xzvf -)
 ```
 
 You can see the result by running:
